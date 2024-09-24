@@ -71,12 +71,13 @@ public class Main {
 
                             BaseCommission newBaseCommissionEmployee = new BaseCommission(employeeName, employeeId, employeeDepartment, employeeAdd, salaryCommission, commission);
                             commissionPayroll.add(newBaseCommissionEmployee);
-
                             break;
 
                         default:
                             System.out.println("Invalid payroll type");
+                            break;
                     }
+                    break;
 
                 case "2":
                     printMonthly(monthlyPayroll);
@@ -94,8 +95,8 @@ public class Main {
                     break;
                 default:
                     System.out.println("Invalid option");
+                    break;
             }
-
         }
 
 
