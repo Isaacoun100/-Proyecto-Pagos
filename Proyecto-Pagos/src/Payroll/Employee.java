@@ -1,6 +1,5 @@
 package Payroll;
 
-import java.time.LocalDate;
 
 public class Employee {
 
@@ -8,9 +7,16 @@ public class Employee {
     //labora, fecha de ingreso a la fábrica.
 
     private String name;
-    private int id;
+    private String id;
     private String department;
-    private LocalDate hireDate;
+    private String hireDate;
+
+    public Employee(String name, String id, String department, String hireDate) {
+        this.name = name;
+        this.id = id;
+        this.department = department;
+        this.hireDate = hireDate;
+    }
 
     public String getName() {
         return name;
@@ -20,11 +26,11 @@ public class Employee {
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -36,11 +42,11 @@ public class Employee {
         this.department = department;
     }
 
-    public LocalDate getHireDate() {
+    public String getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(LocalDate hireDate) {
+    public void setHireDate(String hireDate) {
         this.hireDate = hireDate;
     }
 }
