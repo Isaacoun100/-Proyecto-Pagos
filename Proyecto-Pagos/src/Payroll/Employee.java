@@ -12,13 +12,6 @@ public class Employee {
     private String department;
     private LocalDate hireDate;
 
-    public Employee(LocalDate hireDate, String department, int id, String name) {
-        this.hireDate = hireDate;
-        this.department = department;
-        this.id = id;
-        this.name = name;
-    }
-
     public String getName() {
         return name;
     }
